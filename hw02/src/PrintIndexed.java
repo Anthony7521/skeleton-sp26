@@ -5,6 +5,14 @@ public class PrintIndexed {
      */
    public static void printIndexed(String s) {
       // TODO: Fill in this function
+      int StringLen=s.length();
+      int index=StringLen-1;
+      for(int i=0;i<StringLen;i++){
+         IO.print(s.charAt(i));
+         IO.print(index);
+         index-=1;
+      }
+      IO.println();
    }
 
    public static void main(String[] args) {
